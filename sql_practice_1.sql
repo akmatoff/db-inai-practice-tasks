@@ -25,6 +25,7 @@ INSERT INTO employee(Fname, LName, Salary, BirthDate, DepartmentID, Gender) VALU
 INSERT INTO employee(Fname, LName, Salary, BirthDate, DepartmentID, Gender) VALUES ('Big', 'Smoke', 12000, '24/12/1991', 4, 'male');
 INSERT INTO employee(Fname, LName, Salary, BirthDate, DepartmentID, Gender) VALUES ('Smart', 'Phone', 50000, '12/09/1989', 4, 'male');
 INSERT INTO employee(Fname, LName, Salary, BirthDate, DepartmentID, Gender) VALUES ('Smartie', 'Phonie', 10000, '16/11/1990', 2, 'female');
+INSERT INTO employee(Fname, Lname, BirthDate, Salary, DepartmentID, Gender) VALUES ('Tester', 'Tester', '20/10/1999', 28000, 4, 'female');
 
 -- Task 3
 SELECT Fname + Lname AS FIO FROM employee;
