@@ -21,7 +21,7 @@ INSERT INTO employee(Fname, LName, Salary, BirthDate, DepartmentID, Gender) VALU
 INSERT INTO employee(Fname, LName, Salary, BirthDate, DepartmentID, Gender) VALUES ('Little', 'Stuart', 25000, '10/10/1992', 3, 'male');
 INSERT INTO employee(Fname, LName, Salary, BirthDate, DepartmentID, Gender) VALUES ('Big', 'Smoke', 12000, '24/12/1991', 4, 'male');
 INSERT INTO employee(Fname, LName, Salary, BirthDate, DepartmentID, Gender) VALUES ('Smart', 'Phone', 50000, '12/09/1989', 4, 'male');
-INSERT INTO employee(Fname, LName, Salary, BirthDate, DepartmentID, Gender) VALUES ('Smartie', 'Phonie', 10000, '16/11/1990', 1, 'female');
+INSERT INTO employee(Fname, LName, Salary, BirthDate, DepartmentID, Gender) VALUES ('Smartie', 'Phonie', 10000, '16/11/1990', 2, 'female');
 
 -- Task 1 
 Select REPLACE(Fname, 'o', '#') AS Fname FROM employee;
