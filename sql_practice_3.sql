@@ -40,12 +40,12 @@ INNER JOIN Departments
 ON Departments.id = employee.departmentID 
 WHERE Departments.name != 'Administration';
 
--- Task 11
-SELECT * FROM departments
+-- Task 11 
+SELECT AVG(Salary) 
+FROM Departments
 INNER JOIN employee 
-ON employee.departmentId = departments.id 
-GROUP BY departments.name
-HAVING (
-	SELECT COUNT(*) FROM employee 
-  	
-)
+ON employee.departmentID = Departments.id 
+WHERE (
+	SELECT COUNT(*) FROM Employee 
+  	WHERE employee.departmentid = departments.id 
+) > 3 
