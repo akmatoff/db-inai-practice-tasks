@@ -1,5 +1,5 @@
 CREATE TABLE employee (
-  id INTEGER auto_increment PRIMARY KEY,
+  id integer PRIMARY KEY AUTOINCREMENT,
   Fname varchar(60),
   Lname varchar(60),
   BirthDate date,
@@ -10,7 +10,7 @@ CREATE TABLE employee (
 );
 
 CREATE TABLE Departments (
-    id INTEGER auto_increment PRIMARY KEY,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     Name varchar(60)
 );
 
