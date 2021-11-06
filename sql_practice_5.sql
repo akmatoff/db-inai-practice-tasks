@@ -49,11 +49,8 @@ SELECT p.Pname, e.Fname, e.Lname, wo.hours
 FROM WORKS_ON wo
 INNER JOIN PROJECT p 
 ON p.Pnumber = wo.Pno
-INNER JOIN DEPARTMENT d
-ON d.Dnumber = p.Dnum
 INNER JOIN EMPLOYEE e 
-ON e.dnumber = d.dnumber
-GROUP BY wo.Essn;
+ON e.ssn = wo.essn;
 
 -- Task 8 
 SELECT d.Dname, p.Pname, wo.Hours
