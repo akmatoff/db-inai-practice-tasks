@@ -76,11 +76,9 @@ GROUP BY dp.Essn;
 
 -- Task 10
 SELECT e.lname, e.fname, p.Pname, SUM(wo.Hours) AS HoursSum 
-FROM EMPLOYEE e 
-INNER JOIN DEPARTMENT d 
-ON d.Dnumber = e.dnumber
-INNER JOIN PROJECT p 
-ON d.Dnumber = p.dnum
+FROM PROJECT p 
+INNER JOIN EMPLOYEE e 
+ON e.ssn = wo.essn
 INNER JOIN WORKS_ON wo 
-ON wo.Pno = p.Pnumber
+ON wo.Essn = e.ssn
 WHERE e.Fname = 'Franklin' AND e.lname = 'Wong'
